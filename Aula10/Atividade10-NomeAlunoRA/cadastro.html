@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 10 - Editora Br@sil - Nome Aluno - RA</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+
+    <div id="conteudo">
+        <h2>Atividade 10: Validação e Conexão MySQL - Editora Br@sil</h2>
+        <p class="instrucao">
+            Complete os arquivos <code>conexao.php</code> e <code>processa_cadastro.php</code>
+            para validar os campos com <code>if / else</code> e conectar ao banco <code>editora_brasil</code>!
+        </p>
+
+        <form action="processa_cadastro.php" method="POST">
+            <div class="grupo-campo">
+                <label for="nome_assinante">Nome Completo:</label>
+                <input type="text" id="nome_assinante" name="nome_assinante" class="campo" placeholder="Digite seu nome completo">
+            </div>
+
+            <div class="grupo-campo">
+                <label for="email_assinante">E-mail de Contato:</label>
+                <input type="email" id="email_assinante" name="email_assinante" class="campo" placeholder="exemplo@dominio.com">
+            </div>
+
+            <div class="grupo-campo">
+                <label for="plano_escolhido">Plano Escolhido:</label>
+                <select id="plano_escolhido" name="plano_escolhido" class="campo">
+                    <option value="">Selecione um plano...</option>
+                    <option value="Revista Semestral">Revista Semestral - R$ 59,90</option>
+                    <option value="Revista Anual">Revista Anual - R$ 99,90</option>
+                    <option value="Plano Digital VIP">Plano Digital VIP - R$ 120,00</option>
+                </select>
+            </div>
+
+            <p>
+                <input type="submit" class="botao" value="Avançar para Assinatura">
+            </p>
+        </form>
+    </div>
+
+</body>
+</html>

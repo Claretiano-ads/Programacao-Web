@@ -1,0 +1,152 @@
+/* ==========================================================================
+   Aula 10 - Folha de Estilos da Editora Br@sil (Decisões PHP + MySQL mysqli)
+   ========================================================================== */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f4f8;
+    margin: 0;
+    padding: 30px;
+    color: #333333;
+}
+
+#conteudo {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 25px 30px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-top: 5px solid #000080;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    color: #000080;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+h3 {
+    color: #000080;
+    margin-top: 22px;
+    margin-bottom: 8px;
+    border-bottom: 2px solid #eef2f9;
+    padding-bottom: 5px;
+}
+
+.subtitulo {
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+/* Barra superior com atalhos para os exemplos da aula */
+.barra-servidor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eef2f9;
+    padding: 8px 12px;
+    border-radius: 4px;
+    margin-bottom: 18px;
+    font-size: 12px;
+}
+
+.barra-servidor a {
+    color: #000080;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.barra-servidor a:hover {
+    text-decoration: underline;
+}
+
+.grupo-campo {
+    margin-bottom: 16px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+input.campo,
+select.campo {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 14px;
+    border: 1px solid #bbbbbb;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #fdfdfd;
+}
+
+input.campo:focus,
+select.campo:focus {
+    border-color: #000080;
+    outline: none;
+    background-color: #fffff5;
+}
+
+.botao {
+    cursor: pointer;
+    background-color: #000080;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.botao:hover {
+    background-color: #0033aa;
+}
+
+.botao-voltar {
+    background-color: #e0e0e0;
+    color: #333333;
+}
+
+/* Caixas de Exemplo e Comprovante */
+.exemplo-box {
+    background-color: #f8faff;
+    border-left: 4px solid #000080;
+    padding: 12px 16px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.caixa-sucesso {
+    border: 1px solid #3c763d;
+    background-color: #dff0d8;
+    color: #2b542c;
+    padding: 15px 18px;
+    border-radius: 4px;
+    margin-bottom: 18px;
+}
+
+.caixa-erro {
+    border: 1px solid #d9534f;
+    background-color: #fff2f2;
+    color: #a94442;
+    padding: 15px 18px;
+    border-radius: 4px;
+    margin-bottom: 18px;
+}
+
+code {
+    background-color: #eaeef3;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-family: Consolas, monospace;
+    font-size: 13px;
+}
