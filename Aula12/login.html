@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - Espaço do Assinante</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f4f4f4; padding: 20px;">
+
+    <div style="background-color: #fff; border: 1px solid #ccc; padding: 20px; max-width: 400px;">
+        <h2 style="color: #800000;">Acesso ao Espaço Restrito</h2>
+        <form action="autenticar.php" method="POST">
+            <p>
+                E-mail cadastrado:<br>
+                <input type="email" name="email_login" size="30" required>
+            </p>
+            <p>
+                Senha gerada:<br>
+                <input type="password" name="senha_login" size="30" required>
+            </p>
+            <p>
+                <input type="submit" value="Entrar no Sistema">
+            </p>
+        </form>
+        <p>
+            <a href="cadastro.html">Ainda não sou assinante</a> |
+            <a href="listar_assinantes.php">Ver Lista de Assinantes</a>
+        </p>
+    </div>
+
+</body>
+</html>
