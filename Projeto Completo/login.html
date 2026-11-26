@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Espaço do Assinante | Editora Br@sil</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+
+    <div id="conteudo" style="max-width: 480px;">
+        <div class="menu-navegacao">
+            <a href="index.html" class="marca">📚 EDITORA BR@SIL</a>
+            <div class="menu-links">
+                <a href="cadastro.html">+ Assinar</a>
+                <a href="listar_assinantes.php">📋 Lista</a>
+                <a href="homologacao.php">✅ Homologação</a>
+            </div>
+        </div>
+
+        <h2 style="color: #800000;">Acesso ao Espaço Restrito</h2>
+        <p class="subtitulo">
+            Entre com o seu e-mail cadastrado e a senha automática gerada no momento da assinatura
+            (ex: <code>maria@email.com</code> / senha: <code>marmar26</code>).
+        </p>
+
+        <form action="autenticar.php" method="POST">
+            <div class="grupo-campo">
+                <label for="email_login">E-mail cadastrado:</label>
+                <input type="email" id="email_login" name="email_login" class="campo" size="30" placeholder="Digite seu e-mail" required>
+            </div>
+
+            <div class="grupo-campo">
+                <label for="senha_login">Senha gerada:</label>
+                <input type="password" id="senha_login" name="senha_login" class="campo" size="30" placeholder="Ex: marmar26" required>
+            </div>
+
+            <p>
+                <input type="submit" class="botao botao-restrito" value="Entrar no Sistema">
+            </p>
+        </form>
+
+        <hr>
+        <p style="font-size: 13px;">
+            Ainda não possui assinatura? <a href="cadastro.html"><strong>Cadastre-se aqui</strong></a> |
+            <a href="listar_assinantes.php">Ver Assinantes</a>
+        </p>
+    </div>
+
+</body>
+</html>

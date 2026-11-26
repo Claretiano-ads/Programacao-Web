@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editora Br@sil - Nova Assinatura</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+
+    <div id="conteudo">
+        <div class="menu-navegacao">
+            <a href="index.html" class="marca">📚 EDITORA BR@SIL</a>
+            <div class="menu-links">
+                <a href="cadastro.html">+ Nova Assinatura</a>
+                <a href="listar_assinantes.php">📋 Assinantes</a>
+                <a href="login.html">🔐 Área Restrita</a>
+                <a href="homologacao.php">✅ Homologação</a>
+            </div>
+        </div>
+
+        <h2>Cadastro de Nova Assinatura</h2>
+        <p class="subtitulo">
+            Preencha os campos abaixo. O sistema validará os dados no servidor, gerará sua senha automática
+            com <code>substr()</code> e <code>strtolower()</code> e gravará no banco <code>editora_brasil</code>.
+        </p>
+
+        <form action="processa_cadastro.php" method="POST">
+            <div class="grupo-campo">
+                <label for="nome_assinante">Nome Completo:</label>
+                <input type="text" id="nome_assinante" name="nome_assinante" class="campo" size="35" placeholder="Ex: Maria Silva" required>
+            </div>
+
+            <div class="grupo-campo">
+                <label for="email_assinante">E-mail de Contato:</label>
+                <input type="email" id="email_assinante" name="email_assinante" class="campo" size="35" placeholder="Ex: maria@email.com" required>
+            </div>
+
+            <div class="grupo-campo">
+                <label for="plano_escolhido">Plano Escolhido:</label>
+                <select id="plano_escolhido" name="plano_escolhido" class="campo" required>
+                    <option value="">Selecione um plano...</option>
+                    <option value="Revista Semestral">Revista Semestral - R$ 59,90</option>
+                    <option value="Revista Anual">Revista Anual - R$ 99,90</option>
+                    <option value="Plano Digital VIP">Plano Digital VIP - R$ 120,00</option>
+                </select>
+            </div>
+
+            <p>
+                <input type="submit" class="botao" value="Confirmar Assinatura">
+                <a href="login.html" class="botao botao-secundario" style="margin-left: 8px;">Já sou assinante (Login)</a>
+            </p>
+        </form>
+    </div>
+
+</body>
+</html>
