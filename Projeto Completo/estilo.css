@@ -1,0 +1,233 @@
+/* ==========================================================================
+   Projeto Completo - Sistema de Vendas de Assinaturas da EDITORA BR@SIL
+   Folha de Estilos Unificada (Requisito 1 de Homologação)
+   ========================================================================== */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f4f8;
+    margin: 0;
+    padding: 30px;
+    color: #333333;
+}
+
+#conteudo {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 25px 30px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-top: 5px solid #000080;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Menu de Navegação Unificado do Projeto */
+.menu-navegacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000080;
+    color: #ffffff;
+    padding: 12px 18px;
+    border-radius: 4px;
+    margin-bottom: 22px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.menu-navegacao .marca {
+    font-weight: bold;
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.menu-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    margin-left: 12px;
+    padding: 6px 10px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
+.menu-links a:hover {
+    background-color: #ff0000;
+}
+
+h2 {
+    color: #000080;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+h3 {
+    color: #000080;
+    margin-top: 22px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #eef2f9;
+    padding-bottom: 5px;
+}
+
+.subtitulo {
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.grupo-campo {
+    margin-bottom: 16px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+input.campo,
+select.campo {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 14px;
+    border: 1px solid #bbbbbb;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #fdfdfd;
+}
+
+input.campo:focus,
+select.campo:focus {
+    border-color: #000080;
+    outline: none;
+    background-color: #fffff5;
+}
+
+.botao {
+    cursor: pointer;
+    background-color: #000080;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.botao:hover {
+    background-color: #0033aa;
+}
+
+.botao-restrito {
+    background-color: #800000;
+}
+
+.botao-restrito:hover {
+    background-color: #a00000;
+}
+
+.botao-secundario {
+    background-color: #e0e0e0;
+    color: #333333;
+}
+
+/* Tabelas de Relatório e Homologação */
+.tabela-dados {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+.tabela-dados th {
+    background-color: #000080;
+    color: #ffffff;
+    padding: 10px;
+    text-align: left;
+}
+
+.tabela-dados td {
+    border: 1px solid #cccccc;
+    padding: 9px 10px;
+}
+
+.tabela-dados tr:nth-child(even) {
+    background-color: #f9fbff;
+}
+
+/* Caixas de Status e Comprovante */
+.caixa-comprovante {
+    background-color: #f8faff;
+    border: 2px solid #000080;
+    padding: 18px 20px;
+    border-radius: 6px;
+    margin: 15px 0;
+}
+
+.caixa-erro {
+    background-color: #fff2f2;
+    border: 1px solid #d9534f;
+    color: #a94442;
+    padding: 14px 18px;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+
+.caixa-alerta {
+    background-color: #fcf8e3;
+    border: 1px solid #f0ad4e;
+    color: #8a6d3b;
+    padding: 14px 18px;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+
+.senha-destaque {
+    background-color: #ffffcc;
+    border: 1px solid #e6db55;
+    padding: 3px 8px;
+    font-weight: bold;
+    font-family: Consolas, monospace;
+}
+
+.faixa-restrita {
+    background-color: #800000;
+    color: #ffffff;
+    padding: 12px 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+
+.badge-ok {
+    background-color: #dff0d8;
+    color: #2b542c;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.badge-pendente {
+    background-color: #f2dede;
+    color: #a94442;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+code {
+    background-color: #eaeef3;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-family: Consolas, monospace;
+    font-size: 13px;
+}
